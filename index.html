@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Skill Matcher & Course Recommender</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Skill Matcher & Course Recommender</h1>
+
+    <label>Enter Your Skills (comma separated)</label>
+    <input type="text" id="skills"
+           placeholder="python, html, css">
+
+    <label>Select Job Role</label>
+
+    <select id="jobRole">
+        <option>Data Scientist</option>
+        <option>Software Engineer</option>
+        <option>Web Developer</option>
+        <option>Data Analyst</option>
+        <option>Frontend Developer</option>
+        <option>Backend Developer</option>
+        <option>Full Stack Developer</option>
+        <option>Cybersecurity Analyst</option>
+        <option>Machine Learning Engineer</option>
+        <option>Data Engineer</option>
+        
+    </select>
+
+    <button onclick="matchSkills()">
+        Check Eligibility
+    </button>
+
+    <div id="result"></div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
